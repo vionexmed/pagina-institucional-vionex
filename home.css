@@ -372,6 +372,17 @@
 /* No celular a abertura original sobe o texto sobre a faixa do vídeo; sem vídeo, o texto começa abaixo do cabeçalho. */
 @media(max-width:760px) { .hero--advisory .hero-inner { margin-top:0; padding-top:44px; } }
 /* Assessoria na home: texto e fotos lado a lado, com selo sobre a foto principal. */
+.home-approach .front-eyebrow { color:var(--teal-text); }
+.home-approach-steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:36px; margin-top:44px; border-top:1px solid var(--line); }
+.home-approach-steps li { padding-top:24px; }
+.home-approach-steps li > span { color:var(--teal-text); font-size:13px; }
+.home-approach-steps h3 { color:var(--ink); font-size:22px; line-height:1.3; font-weight:400; margin:16px 0 12px; }
+.home-approach-steps p { color:var(--text); font-size:16px; line-height:1.65; }
+@media(max-width:760px) {
+ .home-approach-steps { grid-template-columns:1fr; gap:28px; }
+ .home-approach-steps li + li { border-top:1px solid var(--line); }
+ .home-advisory .service .btn { max-width:100%; min-height:44px; padding-block:10px; white-space:normal; line-height:1.4; text-align:center; }
+}
 .advisory-intro { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.2fr); gap: 56px; align-items: center; margin-bottom: 72px; }
 .advisory-intro-copy .btn { margin-top: 28px; }
 .advisory-visual { position: relative; margin: 0; padding: 0 0 0 64px; }

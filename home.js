@@ -1,4 +1,5 @@
 import {productDetails,productHotspots} from './home-content.js';
+import './hero-advisory.js';
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const heroVideo=document.querySelector('#hero-video');
 if(heroVideo){
